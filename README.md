@@ -8,7 +8,8 @@ npm install payfast-node
 
 ## Quick Start
 ```js
-const PayFast = require('payfast-node');
+// const PayFast = require('payfast-node');
+// const PayFast = require('payfast');
 
 const payfast = new PayFast({
   merchantId: 'YOUR_MERCHANT_ID',
