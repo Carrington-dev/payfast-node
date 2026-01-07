@@ -1,0 +1,57 @@
+{
+  "name": "payfast-node",
+  "version": "0.0.1",
+  "description": "PayFast payment gateway integration for Node.js, Next.js, and React",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src tests",
+    "lint:fix": "eslint src tests --fix",
+    "format": "prettier --write \"src/**/*.js\" \"tests/**/*.js\"",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint"
+  },
+  "keywords": [
+    "payfast",
+    "payment",
+    "gateway",
+    "south-africa",
+    "payments",
+    "checkout",
+    "nodejs",
+    "nextjs",
+    "react",
+    "express"
+  ],
+  "author": "Carrington Muleya <carrington.muleya@outlook.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carrington-dev/payfast-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/carrington-dev/payfast-node/issues"
+  },
+  "homepage": "https://github.com/carrington-dev/payfast-node#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "eslint": "^8.50.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.3"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ]
+}
