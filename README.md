@@ -7,8 +7,9 @@ Official PayFast payment gateway integration for Node.js, Next.js, and React.
 npm install payfast-node
 
 ## Quick Start
-
-const PayFast = require('payfast-node');
+```js
+// const PayFast = require('payfast-node');
+const PayFast = require('payfast');
 
 const payfast = new PayFast({
   merchantId: 'YOUR_MERCHANT_ID',
@@ -16,6 +17,7 @@ const payfast = new PayFast({
   passphrase: 'YOUR_PASSPHRASE',
   sandbox: true
 });
+```
 
 ## Documentation
 
