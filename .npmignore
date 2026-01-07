@@ -1,0 +1,33 @@
+# Source files (only publish compiled lib/)
+src/
+
+# Tests
+tests/
+coverage/
+jest.config.js
+
+# Examples
+examples/
+
+# Documentation source
+docs/
+
+# Config files
+.eslintrc.js
+.prettierrc
+.babelrc
+tsconfig.json
+
+# CI/CD
+.github/
+
+# Git
+.git/
+.gitignore
+
+# Environment
+.env*
+
+# IDE
+.vscode/
+.idea/
