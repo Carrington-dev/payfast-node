@@ -187,10 +187,10 @@ if (typeof module !== 'undefined' && module.exports) {
 const PayFast = require('./payfast');
 
 const payfast = new PayFast({
-  merchantId: '10000100',
-  merchantKey: '46f0cd694581a',
-  passphrase: 'jt7NOE43FZPn', // Optional but recommended
-  sandbox: true // Set to false for production
+  merchantId: process.env.PAYFAST_MERCHANT_ID,
+  merchantKey: process.env.PAYFAST_MERCHANT_KEY,
+  passphrase: process.env.PAYFAST_PASSPHRASE, // Optional but recommended
+  sandbox: process.env.NODE_ENV === 'development' // Set to false for production
 });
 
 // 2. Create a payment
