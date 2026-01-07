@@ -13,13 +13,14 @@
 9. Create Pull Request
 
 ## Running Tests
-
+```bash
 npm test
 npm run test:coverage
-
+```
 ## Code Style
 
 We use ESLint and Prettier. Run:
-
+```bash
 npm run lint
 npm run format
+```
