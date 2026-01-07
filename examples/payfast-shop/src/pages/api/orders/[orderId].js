@@ -1,4 +1,4 @@
-const store = require('../../../lib/store');
+const store = require('../../../../lib/store');
 
 export default function handler(req, res) {
   const { orderId } = req.query;

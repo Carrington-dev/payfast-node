@@ -1,5 +1,5 @@
-const PayFast = require('../../lib/payfast');
-const store = require('../../lib/store');
+const PayFast = require('../../../lib/payfast');
+const store = require('../../../lib/store');
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
